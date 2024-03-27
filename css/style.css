@@ -1,0 +1,100 @@
+/* ----------- basic properties ---------------- */
+
+:root {
+  /* text color */
+  --primary-text-color: #2c2c2c;
+  --secondary-text-color: #ffffff;
+
+  /* background color */
+  --overlay-background-color: rgb(47, 47, 55, 0.4);
+}
+
+body {
+  font-family: Montserrat sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------- components ---------------- */
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 320px;
+}
+
+.header-container,
+.footer-container {
+  padding: 8px 16px;
+}
+
+.header-img,
+.footer-img {
+  height: 24px;
+  width: 24px;
+}
+
+.header-container,
+.footer-container {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ----------- header ---------------- */
+
+.header-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  color: blue;
+}
+
+/* ----------- main ---------------- */
+.post {
+  position: relative;
+  border-radius: 0 0 16px 16px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--overlay-background-color);
+  width: 100%;
+  padding: 12px 20px;
+}
+.post-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.post-img {
+  width: 100%;
+}
+/* ----------- footer ---------------- */
