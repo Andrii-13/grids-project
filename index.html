@@ -22,23 +22,35 @@
   <body class="body">
     <header class="header">
       <div class="container header-container">
-        <img
-          class="header-img"
-          src="./img/cat.png"
-          alt="cat"
-          height="24"
-          width="24"
-        />
+        <img class="header-img" src="./img/cat.png" alt="cat" />
         <h1 class="header-title">About cat</h1>
       </div>
     </header>
     <main class="main">
-      <div class="container">
+      <div class="container main-container">
         <section class="section new-post">
           <ul class="post-list">
             <li class="post">
-              <a href="#"
-                ><img src="./img/picture 1 (1).png" alt="" class="post-img" />
+              <a href="#">
+                <picture>
+                  <!-- For viewports wider than 768px -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/picture-1.png"
+                  />
+
+                  <!-- For viewports between 320px and 768px -->
+                  <source
+                    media="(min-width: 320px) and (max-width: 767px)"
+                    srcset="img/picture-1-small.png"
+                  />
+
+                  <!-- Fallback content -->
+                  <img
+                    src="img/picture-1-small.png"
+                    alt="Description of Image"
+                  />
+                </picture>
                 <div class="overlay">
                   <h2 class="post-title">
                     Коти та їхні чудові навички: від полювання до загадкових
@@ -50,7 +62,7 @@
             <li class="post">
               <a href="#">
                 <img
-                  src="./img/picture 2.png"
+                  src="./img/picture-2.png"
                   alt="cat on hands"
                   class="post-img"
                 />
@@ -65,7 +77,7 @@
             <li class="post">
               <a href="#">
                 <img
-                  src="./img/picture 3.png"
+                  src="./img/picture-3.png"
                   alt="people play with cat"
                   class="post-img"
                 />
@@ -79,12 +91,14 @@
           </ul>
         </section>
         <section class="section">
-          <ul class="blog">
-            <li>
+          <ul class="blog-list">
+            <li class="blog-item">
               <a href="#" class="blog-link">
                 <img src="./img/1.png" alt="cat" class="post-img" />
                 <div class="blog-discription">
-                  <h2>Найпопулярніші породи котів: який кіт підходить вам?</h2>
+                  <h2 class="post-title blog-title">
+                    Найпопулярніші породи котів: який кіт підходить вам?
+                  </h2>
                   <p>
                     Вивчіть найпопулярніші породи котів і їхні особливості, щоб
                     зробити інформований вибір, який підходить саме вам.
@@ -92,7 +106,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="blog-item">
               <a href="#" class="blog-link">
                 <img
                   src="./img/2.png"
@@ -100,7 +114,7 @@
                   class="post-img"
                 />
                 <div class="blog-discription">
-                  <h2>
+                  <h2 class="post-title blog-title">
                     Як піклуватися про вашого пухнастого друга: догляд за котом
                   </h2>
                   <p>
@@ -110,11 +124,13 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="blog-item">
               <a href="#" class="blog-link">
                 <img src="./img/3.png" alt="cat" class="post-img" />
                 <div class="blog-discription">
-                  <h2>Забавні факти про котів, які вас здивують</h2>
+                  <h2 class="post-title blog-title">
+                    Забавні факти про котів, які вас здивують
+                  </h2>
                   <p>
                     Веселі та цікаві факти про котів, які піднімуть вам настрій
                     та розкажуть про їхні унікальність.
@@ -122,11 +138,13 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="blog-item">
               <a href="#" class="blog-link">
                 <img src="./img/4.png" alt="cat" class="post-img" />
                 <div class="blog-discription">
-                  <h2>Історія та культурна значущість котів в усьому світ</h2>
+                  <h2 class="post-title blog-title">
+                    Історія та культурна значущість котів в усьому світ
+                  </h2>
                   <p>
                     Вивчіть, як коти впливали на культури різних народів та
                     дізнайтеся історію спільного життя людей і котів.
@@ -139,41 +157,65 @@
         <section class="section">
           <aside class="sidebar">
             <h2>Соцмережі</h2>
-            <ul>
-              <li>
-                <a href="">
-                  <img src="./img/instagram.png" alt="instagram" />
-                  <p>230.000</p>
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <img
+                    src="./img/instagram.png"
+                    alt="instagram"
+                    class="social-icon"
+                  />
+                  <p class="social-text">230.000</p>
                 </a>
               </li>
-              <li>
-                <a href="">
-                  <img src="./img/facebook.png" alt="facebook" />
-                  <p>230.000</p>
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <img
+                    src="./img/facebook.png"
+                    alt="facebook"
+                    class="social-icon"
+                  />
+                  <p class="social-text">230.000</p>
                 </a>
               </li>
-              <li>
-                <a href="">
-                  <img src="./img/youtube.png" alt="youtoube" />
-                  <p>230.000</p>
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <img
+                    src="./img/youtube.png"
+                    alt="youtoube"
+                    class="social-icon"
+                  />
+                  <p class="social-text">230.000</p>
                 </a>
               </li>
-              <li>
-                <a href="">
-                  <img src="./img/tiktok.png" alt="tiktok" />
-                  <p>230.000</p>
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <img
+                    src="./img/tiktok.png"
+                    alt="tiktok"
+                    class="social-icon"
+                  />
+                  <p class="social-text">230.000</p>
                 </a>
               </li>
-              <li>
-                <a href="">
-                  <img src="./img/github.png" alt="github" />
-                  <p>230.000</p>
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <img
+                    src="./img/github.png"
+                    alt="github"
+                    class="social-icon"
+                  />
+                  <p class="social-text">230.000</p>
                 </a>
               </li>
-              <li>
-                <a href="">
-                  <img src="./img/twitter.png" alt="twitter" />
-                  <p>230.000</p>
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <img
+                    src="./img/twitter.png"
+                    alt="twitter"
+                    class="social-icon"
+                  />
+                  <p class="social-text">230.000</p>
                 </a>
               </li>
             </ul>
@@ -182,12 +224,14 @@
         <section class="section">
           <div class="videoblog">
             <h2>Відео з пухнастиками</h2>
-            <img src="./img/picture.png" alt="video" class="post-img" />
-            <img
-              class="triangle"
-              src="./img/bi_caret-right-fill.png"
-              alt="triangle"
-            />
+            <div class="video">
+              <img src="./img/picture.png" alt="video" class="post-img" />
+              <img
+                class="triangle"
+                src="./img/bi_caret-right-fill.png"
+                alt="triangle"
+              />
+            </div>
           </div>
         </section>
       </div>
