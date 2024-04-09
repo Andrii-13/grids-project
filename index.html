@@ -28,68 +28,60 @@
     </header>
     <main class="main">
       <div class="container main-container">
-        <section class="section new-post">
-          <ul class="post-list">
-            <li class="post">
-              <a href="#">
-                <picture>
-                  <!-- For viewports wider than 768px -->
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="img/picture-1.png"
-                  />
+        <ul class="post-list">
+          <li class="post">
+            <a href="#">
+              <picture>
+                <!-- For viewports wider than 768px -->
+                <source media="(min-width: 768px)" srcset="img/picture-1.png" />
 
-                  <!-- For viewports between 320px and 768px -->
-                  <source
-                    media="(min-width: 320px) and (max-width: 767px)"
-                    srcset="img/picture-1-small.png"
-                  />
+                <!-- For viewports between 320px and 768px -->
+                <source
+                  media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/picture-1-small.png"
+                />
 
-                  <!-- Fallback content -->
-                  <img
-                    src="img/picture-1-small.png"
-                    alt="Description of Image"
-                  />
-                </picture>
-                <div class="overlay">
-                  <h2 class="post-title">
-                    Коти та їхні чудові навички: від полювання до загадкових
-                    здібностей
-                  </h2>
-                </div></a
-              >
-            </li>
-            <li class="post">
-              <a href="#">
-                <img
-                  src="./img/picture-2.png"
-                  alt="cat on hands"
-                  class="post-img"
-                />
-                <div class="overlay">
-                  <h2 class="post-title">
-                    Коти в літературі та мистецтві: від Егіпетських богів до
-                    сучасних майстрів
-                  </h2>
-                </div></a
-              >
-            </li>
-            <li class="post">
-              <a href="#">
-                <img
-                  src="./img/picture-3.png"
-                  alt="people play with cat"
-                  class="post-img"
-                />
-                <div class="overlay">
-                  <h2 class="post-title">
-                    Котячі породи для активних власників: як вибрати компаньйона
-                  </h2>
-                </div></a
-              >
-            </li>
-          </ul>
-        </section>
+                <!-- Fallback content -->
+                <img src="img/picture-1-small.png" alt="Description of Image" />
+              </picture>
+              <div class="overlay">
+                <h2 class="post-title">
+                  Коти та їхні чудові навички: від полювання до загадкових
+                  здібностей
+                </h2>
+              </div></a
+            >
+          </li>
+          <li class="post">
+            <a href="#">
+              <img
+                src="./img/picture-2.png"
+                alt="cat on hands"
+                class="post-img"
+              />
+              <div class="overlay">
+                <h2 class="post-title">
+                  Коти в літературі та мистецтві: від Егіпетських богів до
+                  сучасних майстрів
+                </h2>
+              </div></a
+            >
+          </li>
+          <li class="post">
+            <a href="#">
+              <img
+                src="./img/picture-3.png"
+                alt="people play with cat"
+                class="post-img"
+              />
+              <div class="overlay">
+                <h2 class="post-title">
+                  Котячі породи для активних власників: як вибрати компаньйона
+                </h2>
+              </div></a
+            >
+          </li>
+        </ul>
         <section class="section">
           <ul class="blog-list">
             <li class="blog-item">
@@ -153,10 +145,8 @@
               </a>
             </li>
           </ul>
-        </section>
-        <section class="section">
-          <aside class="sidebar">
-            <h2>Соцмережі</h2>
+          <div class="social">
+            <h2 class="title">Соцмережі</h2>
             <ul class="social-list">
               <li class="social-item">
                 <a href="#" class="social-link">
@@ -219,11 +209,9 @@
                 </a>
               </li>
             </ul>
-          </aside>
-        </section>
-        <section class="section">
+          </div>
           <div class="videoblog">
-            <h2>Відео з пухнастиками</h2>
+            <h2 class="title">Відео з пухнастиками</h2>
             <div class="video">
               <img src="./img/picture.png" alt="video" class="post-img" />
               <img
@@ -239,7 +227,7 @@
     <footer class="footer">
       <div class="footer-container container">
         <img class="footer-img" src="./img/cat.png" alt="cat" />
-        <h2>About cat</h2>
+        <h2 class="footer-title">About cat</h2>
       </div>
     </footer>
   </body>

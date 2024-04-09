@@ -48,6 +48,14 @@ a {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 0 156px;
   }
 }
 
@@ -66,9 +74,17 @@ a {
   padding: 8px 16px;
 }
 
+@media screen and (min-width: 1440px) {
+  .header-container,
+  .footer-container {
+    padding: 8px 172px;
+  }
+}
+
 /* ----------- header ---------------- */
 
-.header-title {
+.header-title,
+.footer-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 40px;
@@ -80,6 +96,47 @@ a {
 .main-container {
   display: grid;
   gap: 96px;
+}
+
+.section {
+  display: grid;
+  gap: 96px;
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    column-gap: 24px;
+    row-gap: 36px;
+    grid-template-areas:
+      "blog blog social"
+      "blog blog social"
+      "blog blog video"
+      "blog blog .";
+  }
+
+  /* .section-post {
+    grid-area: post;
+  } */
+
+  .blog-list {
+    grid-area: blog;
+  }
+
+  .social {
+    grid-area: social;
+  }
+
+  .video {
+    grid-area: video;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 24px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
 }
 
 .post {
